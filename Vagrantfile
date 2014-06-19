@@ -11,7 +11,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Every Vagrant virtual environment requires a box to build off of.
   config.vm.box = "chef/debian-7.4"
-
+  
+  config.vm.provider "virtualbox" do |v|
+    v.name = "HackODLRC-DebianBase"
+  end
+  config.vm.hostname = "HackODLRC-DebianBase"
+ 
+  config.vm.provision :shell, :path => "installswifttools.sh"
+  
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
