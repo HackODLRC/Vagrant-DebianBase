@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Installing python-dev and build-essential"
+sudo apt-get update && sudo apt-get install -y python-dev build-essential
+echo "Done!"
+
 echo "Installing pip..."
 wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 sudo python get-pip.py
