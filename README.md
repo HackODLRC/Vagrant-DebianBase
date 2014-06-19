@@ -3,7 +3,7 @@ Vagrant-DebianBase
 
 A clean Debian 7.4 installation, which some additional Swift components already installed in the home directory.
 
-Install Vagrant and Git. 
+Install VirtualBox, Vagrant and Git. 
 
 Then:
 
